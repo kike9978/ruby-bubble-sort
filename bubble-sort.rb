@@ -1,8 +1,5 @@
-require "pry-byebug"
 def bubble_sort(numbers)
   sorted = false
-  iterator_cap = numbers.length - 1
-
   numbers.each_index do |i|
 
     switched = false
@@ -16,17 +13,12 @@ def bubble_sort(numbers)
         switched = true
       end
     end
-    
     return numbers if !switched 
-    
-    puts i
   end
-
   numbers
-
 end
 
 to_besorted = [4,3,78,2,0,2]
-# to_besorted = [4,3]
+
 
 print bubble_sort(to_besorted)
